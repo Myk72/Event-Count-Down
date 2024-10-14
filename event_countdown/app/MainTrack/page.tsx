@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import AddEvent from "./AddEvent/page";
+import AddEvent from "../components/AddEvent/page";
 import { useState, useEffect } from "react";
 import { PlusCircle, CircleDotDashed, XCircle } from "lucide-react";
-import Countdown from "./Countdown/page";
+import Countdown from "../components/Countdown/page";
 interface Event {
   title: string;
   date: string;
@@ -56,7 +56,7 @@ const PageLayout = () => {
 
               return (
                 <div>
-                  <div className="flex flex-col text-sm font-serif w-64 border p-2 rounded-xl">
+                  <div className="flex flex-col text-sm font-serif w-72 border p-2 rounded-xl">
                     <div className="flex flex-row justify-between">
                       <div className="text-2xl font-medium w-48 truncate">
                         {event.title}
